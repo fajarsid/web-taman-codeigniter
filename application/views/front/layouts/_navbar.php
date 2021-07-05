@@ -1,14 +1,14 @@
 <?php
    $this->load->model('category_model', 'category', true);
    $navbar   = $this->category->getCategory();
-
    $category = $this->uri->segment(3);
 ?>
 
 <nav class="navbar navbar-light navbar-expand-lg navbar-light bg-light fixed-top home">
     <div class="container">
         <a href="<?= base_url() ?>" class="navbar-brand d-flex w-50 mr-auto">
-            <p>HOME</p>
+            <img src="<?php echo base_url(); ?>assets/front/img/logo.png" width="60px">
+            <p> Taman Hutan Kota<br>Kecamatan Cilandak</p>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>

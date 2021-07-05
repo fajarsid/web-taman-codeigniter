@@ -4,12 +4,14 @@
         <?php $no = 0;?>
         <?php foreach($featured as $f) : ?>
         <?php $no++;  ?>
+
         <div class="carousel-item <?php if($no <= 1) { echo "active"; } ?> ">
-            <div class="row align-items-center my-5">
-                <div class="col-lg-8">
-                    <img class="img-fluid mb-4 mb-lg-0" src="<?= base_url("images/posting/$f->photo") ?>" alt="">
+            <div class="align-items-center mt-10">
+                <div>
+                    <img class="img-fluid mx-auto d-block" src="<?= base_url("images/posting/$f->photo") ?>" alt="">
                 </div>
-                <div class="col-lg-4">
+                <br>
+                <div class="col-lg-12">
                     <div class="container">
                         <div class="date text-center">
                             <a class="genric-btn success circle small"
